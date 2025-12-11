@@ -1,0 +1,113 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Environment Variables
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+.env.*.local
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+.nyc_output
+
+# Testing
+.cache/
+.tmp/
+.temp/
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*.bak
+*~
+.DS_Store
+.project
+.classpath
+.settings/
+*.sublime-workspace
+*.sublime-project
+
+# OS Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Build directories
+dist/
+build/
+out/
+
+# Database
+*.sqlite
+*.sqlite3
+*.db
+
+# Uploads/User Generated Content
+uploads/
+public/uploads/
+temp/
+tmp/
+
+# SSL Certificates (if stored locally)
+*.pem
+*.key
+*.cert
+*.crt
+*.csr
+
+# Config files with sensitive data
+config/config.json
+config/database.json
+config/secrets.json
+
+# Session storage
+sessions/
+
+# PM2
+.pm2/
+
+# Docker
+.dockerignore
+
+# Misc
+.cache
+.parcel-cache
+.npm
+.eslintcache
+.node_repl_history
+.yarn-integrity
