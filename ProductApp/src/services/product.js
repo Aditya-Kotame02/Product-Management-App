@@ -32,3 +32,15 @@ export async function deleteProduct(id) {
         return null
     }
 }
+
+export async function updateProduct(id, name, price, quantity) {
+    try {
+        const url = config.url + `/product/update/${id}`
+        const body = {name, price, quantity}
+        const response = await axios.put(url, body)
+        return response.data
+    } catch (error) {
+        return null
+    }
+    
+}

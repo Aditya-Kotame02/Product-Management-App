@@ -1,3 +1,3 @@
 export const config = {
-    url : 'http://YOUR_LOCAL_IP:4000'
+    url : 'http:YOUR_IP_ADDRESS:4000'
 }

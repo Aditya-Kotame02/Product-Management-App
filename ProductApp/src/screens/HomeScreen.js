@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react'
 import Button from '../components/Button'
 import { addProduct, deleteProduct, displayAllProducts } from '../services/product'
 
-export default function HomeScreen() {
+export default function HomeScreen({navigation}) {
     const [name, setName] = useState('')
     const [category, setCategory] = useState('')
     const [price, setPrice] = useState('')
@@ -22,6 +22,10 @@ export default function HomeScreen() {
     useEffect(() => {
         fetchProducts()
     }, [])
+
+    const goUpdate = (item) => {
+        navigation.navigate('UpdateProduct', {product: item})
+    }
 
     //Add Product
     const additem = async () => {
@@ -114,6 +118,13 @@ export default function HomeScreen() {
                         deleteProd(item.id)
                     }}
                 />
+
+                <Button
+                    backgroundColor='green'
+                    title='UPDATE=>'
+                    marginTop={10}
+                    onPress={() => goUpdate(item)}
+                 />
             </View>
         )}
       />

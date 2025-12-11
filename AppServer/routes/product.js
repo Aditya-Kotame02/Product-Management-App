@@ -28,4 +28,14 @@ router.delete('/delete', (req, res) => {
     })
 })
 
+router.put('/update/:id', (req, res) => {
+    const {name, price, quantity} = req.body
+    const id = req.params.id
+    const sql = `UPDATE products SET name = ?, price = ?, quantity = ? WHERE id = ?`
+    pool.query(sql, [name, price, quantity, id], (err, data) => {
+        res.send(result.createResult(err, data))
+    })
+})
+
+
 module.exports = router
