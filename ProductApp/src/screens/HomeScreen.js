@@ -21,7 +21,7 @@ export default function HomeScreen({navigation}) {
 
     useEffect(() => {
         fetchProducts()
-    }, [])
+    }, [products])
 
     const goUpdate = (item) => {
         navigation.navigate('UpdateProduct', {product: item})

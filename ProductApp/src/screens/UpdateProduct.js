@@ -1,6 +1,6 @@
 import { View, Text, StyleSheet } from 'react-native'
 import EditText from '../components/EditText';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Button from '../components/Button';
 import { updateProduct } from '../services/product';
 
